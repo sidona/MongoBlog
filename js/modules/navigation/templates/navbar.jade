@@ -1,0 +1,33 @@
+.container
+	nav.navbar.navbar-default
+		.container-fluid
+			.navbar-header
+				a.navbar-brand(href='#contacts')
+					|Blog
+					button.btn.btn-primary(type='button', data-toggle='modal', data-target='#myModal', data-title='Contact Us') Contact Us
+
+#myModal.modal.fade
+	.modal-dialog
+		.modal-content
+			.modal-header
+				button.close(type='button', data-dismiss='modal', aria-hidden='true') &times;
+
+				h4.modal-title Information
+
+			.modal-body
+				form(role='form')
+					.form-group
+						label.control-label(for='recipient-name') Email:
+
+						input#recipient-name.form-control(type='text', placeholder!='sidona_g@yahoo.com')
+
+					.form-group
+						label.control-label(for='message-text') Message:
+
+						textarea#message-text.form-control(type='text', placeholder!='Adresa: Bulevardul Garii 20, Brasov')
+
+			.modal-footer
+				button.btn.btn-default(type='button', data-dismiss='modal') Back
+
+
+
